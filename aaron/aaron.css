@@ -1,0 +1,346 @@
+
+
+
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("images/aaronf.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.homepage_aaron
+{
+height:750px;
+background-color:#34495e;
+    font-size:36px
+
+}
+
+
+.home_image_aaron
+{
+
+width: 100%;
+height: 600px;
+
+}
+
+
+.aaron_hr_style
+{
+    width: 50%;
+  border: 1px solid #34495e;;
+}
+
+
+.aaron_home
+{
+    color: #34495e;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+
+.aaron_home2
+{
+    background-color:#34495e; 
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+.aaron_home_body
+{
+    color: #00000e;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: #34495e;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+font-size: 24px;
+}
+
+
+
+.aaron_go
+{
+    font-size: 80px;
+}
+
+
+
+
+.aaron_go:hover
+{
+    font-size: 80px;
+    color: grey;
+}
+
+
+
+.aaron_question
+{
+    font-size: 40px;
+    
+    color: black;
+}
+
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+ width: 50%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:#34495e ;
+    color: white;
+}
+
+
+.retake:hover{
+    background-color: white;
+}
+
+
+input[type=submit] {
+  background-color:#34495e  ;
+    width: 150px;
+    height: 50px;
+  color: white;
+    font-size: 24px;
+}
+
+.aaron_table_font
+{
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+
+.bmi
+
+{
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+}
+
+
+.cv
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.aaron_button
+{
+    width: 250px;
+    height: 100px;
+    
+}
